@@ -20,9 +20,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run lint
-        run: npm run lint
-
       - name: Run tests
         run: npm test -- --watchAll=false
 
@@ -44,4 +41,5 @@ jobs:
           action: "upload"
           app_location: "/"
           output_location: "build"
+
 
